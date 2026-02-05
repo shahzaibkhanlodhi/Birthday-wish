@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Birthday Surprise</title></head>
+<body style="text-align:center;padding-top:100px;background:pink;">
+<h2>Enter Secret Code 💖</h2>
+<input id="code" placeholder="Code" style="padding:10px;width:80%;">
+<br><br>
+<button onclick="check()">Open Surprise 🎁</button>
+<div id="surprise" style="display:none;margin-top:20px;">
+🎉 HAPPY BIRTHDAY MERI JAAN 🎉<br>
+💖 Tum meri zindagi ho 💖<br>🎂😘
+</div>
+<script>
+function check() {
+  if(document.getElementById("code").value==="LOVE2026"){
+    document.getElementById("surprise").style.display="block";
+  } else { alert("Wrong code 😜"); }
+}
+</script>
+</body>
+</html>
